@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      li {
+        color: red;
+      }
+      ul {
+        display: grid;
+        /* justify-content: s; */
+      }
+
+      #blue button {
+        background-color: blue;
+        border: none;
+      }
+
+      #red button {
+        background-color: red;
+        border: none;
+      }
+
+      #green button {
+        border: none;
+        background-color: green;
+      }
+
+      .box {
+        border-radius: 9px;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        color: #202020;
+        padding: 1.2rem;
+        /* margin-top: 400px; */
+        background-color: #101010;
+      }
+
+      .box:nth-child(1) {
+        order: 1;
+      }
+
+      .box {
+        padding: 15px;
+      }
+
+      .box:hover {
+        background-color: #131313;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <div class="box" id="red">
+          <button id="redButton">Red</button>
+        </div>
+        <div class="box" id="green">
+          <button id="greenButton">Green</button>
+          <!-- <li>green</li> -->
+        </div>
+        <div class="box" id="blue">
+          <button id="blueButton">Blue</button>
+          <!-- <li>blue</li> -->
+        </div>
+      </ul>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
